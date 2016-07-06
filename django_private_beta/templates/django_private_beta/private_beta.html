@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block title %}{{ block.super }}Sign Up{% endblock %}
+
+{% block container %}
+<div class="container form-box">
+  <div class="text-center">
+    <h2>We will contact you when we're ready to rumble.</h2>
+        <h4>Zero spam guaranteed.</h4>
+  </div>
+
+  {% crispy form %}
+
+</div>
+
+{% endblock container %}
+
+
+
